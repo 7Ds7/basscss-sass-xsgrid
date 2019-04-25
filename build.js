@@ -28,6 +28,7 @@ var addons = [
   'basscss-addons/modules/btn',
   'basscss-addons/modules/btn-outline',
   'basscss-addons/modules/btn-primary',
+  'basscss-addons/modules/btn-sizes',
   'basscss-addons/modules/colors',
   'basscss-addons/modules/darken',
   'basscss-addons/modules/forms',
@@ -38,7 +39,11 @@ var addons = [
   'basscss-addons/modules/media-object',
   'basscss-addons/modules/progress',
   'basscss-addons/modules/responsive-margin',
-  'basscss-addons/modules/responsive-padding'
+  'basscss-addons/modules/responsive-padding',
+  'basscss-addons/modules/responsive-layout',
+  'basscss-addons/modules/responsive-position',
+  'basscss-addons/modules/responsive-typography',
+  'basscss-addons/modules/responsive-type-scale',
 ]
 
 var modulePrefixRegex = /^basscss\-addons\/modules\/|^basscss\-/
