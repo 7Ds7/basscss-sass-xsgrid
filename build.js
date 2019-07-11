@@ -31,19 +31,22 @@ var addons = [
   'basscss-addons/modules/btn-sizes',
   'basscss-addons/modules/colors',
   'basscss-addons/modules/darken',
+  'basscss-addons/modules/debug-grid',
   'basscss-addons/modules/forms',
   'basscss-addons/modules/highlight-dark',
   'basscss-addons/modules/highlight',
   'basscss-addons/modules/input-range',
+  'basscss-addons/modules/legacy',
   'basscss-addons/modules/lighten',
   'basscss-addons/modules/media-object',
   'basscss-addons/modules/progress',
+  'basscss-addons/modules/responsive-layout',
   'basscss-addons/modules/responsive-margin',
   'basscss-addons/modules/responsive-padding',
-  'basscss-addons/modules/responsive-layout',
   'basscss-addons/modules/responsive-position',
-  'basscss-addons/modules/responsive-typography',
   'basscss-addons/modules/responsive-type-scale',
+  'basscss-addons/modules/responsive-typography',
+
 ]
 
 var modulePrefixRegex = /^basscss\-addons\/modules\/|^basscss\-/
@@ -52,7 +55,6 @@ var modulePrefixRegex = /^basscss\-addons\/modules\/|^basscss\-/
 
 function buildPartial (m) {
   var css = '@import "' + m + '";'
-
   postcss([ postcssImport ])
     .process(css).then(function (result) {
       var scss = cssScss(result.css)
