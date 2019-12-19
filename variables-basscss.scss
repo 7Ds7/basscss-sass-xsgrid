@@ -1,27 +1,5 @@
-# basscss-sass
 
-Transpiled Basscss Sass partials
-
-http://basscss.com
-
-This repository is provided as a convenience for users working within a Sass build process.
-Basscss is written in standard, spec-compliant CSS, using some new features like [custom media queries](http://dev.w3.org/csswg/mediaqueries/#custom-mq) and [custom properties](http://www.w3.org/TR/css-variables/), and is distributed across multiple modules.
-
-If you have any choice in the matter, I highly recommend using [PostCSS](https://github.com/postcss/postcss) instead of Sass.
-
-
-## Getting Started
-
-```bash
-npm install 7ds7/bass-sass
-```
-
-## Sass variables defaults
-
-In order to override basscss defaults include the file [variables-basscss.scss](https://github.com/7Ds7/basscss-sass/blob/master/variables-basscss.scss) before importing basscss on your project.
-
-```scss
-// SHAPE VARIABLES
+// SHAPE
 // relates to structure
 
 // Breakpoints
@@ -86,7 +64,7 @@ $range-thumb-pseudo-size: $form-field-height;
 // Media object
 $media-object-space: $space-1;
 
-// ASPECT VARIABLES
+// ASPECT
 // relates to looks
 
 // Colors
@@ -167,28 +145,3 @@ $button-font-family: inherit;
 $button-font-size: inherit;
 $button-font-weight: $bold-font-weight;
 $button-line-height: 1.125rem;
-```
-
-## Sass Tips
-
-Using Sass as a preprocessor can cause numerous issues when working on large scale CSS with multiple contributors. I recommend following these tips when using Sass.
-
-- **Never use @extend.** `@extend` is an anti-pattern, and Basscss is not intended to work with this functionality in Sass.
-- **Avoid Mixins** Mixins lead to unnecessary complexity, are generally poorly understood, often lead to code bloat, and do not align with Basscss's design principles.
-- **Avoid Nesting Selectors** To maintain the composability of Basscss, avoid nesting selectors as much as possible.
-
-
-## Contributing
-
-**The scss files in this repository are not source files.**
-They are transpiled from their respective CSS modules using the
-[css-scss](https://github.com/jxnblk/css-scss) module.
-
-Do **not** edit the scss files in this repository.
-
-See <CONTRIBUTING.md> for more.
-
----
-
-[MIT License](LICENSE.md)
-
