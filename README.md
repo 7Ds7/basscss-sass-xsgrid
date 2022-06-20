@@ -79,8 +79,8 @@ $form-field-height: 2.25rem;
 // Range field
 $range-thumb-width: $form-field-padding-x;
 $range-thumb-height: ( $form-field-height - ($form-field-padding-y * 2) );
-$range-track-height: ( $form-field-padding-y / 2 );
-$range-thumb-offset: ( $range-thumb-height / -2 + ($range-track-height / 2) );
+$range-track-height: ( calc($form-field-padding-y / 2) );
+$range-thumb-offset: ( calc($range-thumb-height / -2) + (calc($range-track-height / 2)) );
 $range-thumb-pseudo-size: $form-field-height;
 
 // Media object
