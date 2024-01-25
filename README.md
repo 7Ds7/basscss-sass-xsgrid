@@ -25,6 +25,7 @@ In order to override basscss defaults include the file [variables-basscss.scss](
 // relates to structure
 
 // Breakpoints
+$breakpoint-xs-grid: '(min-width: 31.3125rem)';
 $breakpoint-xs: '(max-width: 40em)';
 $breakpoint-sm: '(min-width: 40em)';
 $breakpoint-sm-md: '(min-width: 40em) and (max-width: 52em)';
